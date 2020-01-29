@@ -25,10 +25,10 @@ The DS18B20 consists of 3 wires :-
 * The GND Wire
 * The Data Wire
 
-Connect the Vcc Wire to 5V or 3.3V
-Connect the GND Wire to GND
-Connect the Data Wire to an Analog or PWM type pin
-There must be a 4.7k Ohm resistor between the Vcc and Data pin
+Connect the Vcc Wire to 5V or 3.3V.
+Connect the GND Wire to GND.
+Connect the Data Wire to an Analog or PWM type pin.
+There must be a 4.7k Ohm resistor between the Vcc and Data pin.
 
 _Sometimes this may also not work. Then try the following :_
 * If you are getting negative value output, try inverting the Vcc and GND wires because some manufacturers make it in the opposite manner.
