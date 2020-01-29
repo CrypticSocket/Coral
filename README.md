@@ -7,6 +7,7 @@
 It contains the code for the working of the Water Temperature sensor. 
 
 **Sensor Specs**
+
 Name : Underwater Temperature Sensor
 Code : DS18B20
 Range : -55 deg C to 125 deg C
@@ -18,6 +19,7 @@ This guide, however, does not have all the information so the set up will not wo
 After a little bit of poking around and hit and trial, we realised it also requires a pull-up resistor of 4.7k ohm.
 
 **Hardware Connection**
+
 The DS18B20 consists of 3 wires :-
 * The Vcc Wire
 * The GND Wire
