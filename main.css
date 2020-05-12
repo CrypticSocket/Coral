@@ -43,8 +43,6 @@ nav{
 
 .linksside{
     display: flex;
-    width: 30%;
-    justify-content: space-around;
     list-style-type: none;
     transition: transform 0.5s ease-out;
 }
@@ -204,6 +202,7 @@ nav{
 .nav-active{
     transform: translateX(0%);
     opacity: 1;
+    width: 250px;
 }
 
 .burger-active{
