@@ -11,6 +11,7 @@
     --fontSmallText : 'Jost', sans-serif;
     --fontLargerText : 'Oxygen', sans-serif;
     --colorBGLighter : #111;
+    --colorBGDarker :#000;
     --colorBGLighterHover : #333;
     --colorLighter : #DDD;
     --colorLighterLess : #AAA;
@@ -25,9 +26,8 @@ a{
 
 nav{
     display: flex;
-    /* padding: 1em 4em; */
     justify-content: space-between;
-    font-size: 1.05em;
+    font-size: 1.05rem;
     font-family: var(--fontSmallText);
     color: var(--colorLighter);
     background-color: var(--colorBGLighter);
@@ -35,8 +35,8 @@ nav{
 
 .logoside{
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 1em;
+    letter-spacing: 0.05rem;
+    padding: 1rem;
     font-weight: bold;
     transition: background-color 0.5s ease-out;
 }
@@ -48,8 +48,8 @@ nav{
 }
 
 .linksside li{
-    padding: 1em;
-    transition: background-color 0.5s ease-out;
+    padding: 1rem;
+    transition: background-color 0.3s ease-out;
 }
 
 .logoside:hover, .linksside li:hover{
@@ -57,7 +57,7 @@ nav{
 }
 
 .burger{
-    margin: 0.7em;
+    margin: 0.7rem;
     cursor: pointer;
     transition-duration: 0.5s;
     display: none;
@@ -129,6 +129,10 @@ nav{
     margin: auto;
 }
 
+.center{
+    text-align: center;
+}
+
 .secHeading{
     font-size: 2em;
     font-family: var(--fontLargerText);
@@ -140,9 +144,10 @@ nav{
 }
 
 .linear{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-gap: 2em; */
+    justify-items: center ;
 }
 
 .genText{
@@ -152,22 +157,45 @@ nav{
     color: #B0BAB9;
     font-family: var(--fontSmallText);
     text-align: justify;
-    width: 45%;
 }
 
 .coralImg{
-    width: 45%;
-    height: 100%;
-    image-rendering: optimizeSpeed;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     align-self: center;
 }
 
+    /* Get In Touch */
+#GetIT{
+    min-height: 100vh;
+    padding: 1em 1em 3em 1em;
+    background-color: var(--colorBGDarker);
+}
+
+.name{
+    color: rgb(0, 140, 255);
+    text-decoration: underline;
+    transition: background-color 0.5s ease;
+}
+
+.name:hover{
+    background-color: rgb(0, 140, 255);
+    text-decoration: none;
+    color: white;
+}
 
 @media screen and (max-width:768px)
 {
     body{
+        font-size: 0.8em;
         overflow-x: hidden;
     }
+
+    .eighty{
+        width: 100%;
+    }
+
 
     /* Navigation */
     nav{
@@ -194,14 +222,19 @@ nav{
     }
     .burger{
         display: unset;
-    }    
+    } 
+
+    .linear{
+        grid-template-columns: 100%;
+        grid-gap: 2em;
+    }
 }
 
 /* Toggle Animations */
 
 .nav-active{
     transform: translateX(0%);
-    opacity: 1;
+    opacity: 0.95;
     width: 250px;
 }
 
