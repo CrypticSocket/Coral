@@ -15,6 +15,10 @@
     --colorBGLighterHover : #333;
     --colorLighter : #DDD;
     --colorLighterLess : #AAA;
+
+    
+  scrollbar-color: rgb(0,0,0) var(--colorBGLighter);
+  scrollbar-width: thin;
 }
 
 a{
