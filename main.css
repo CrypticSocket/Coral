@@ -122,6 +122,12 @@ nav{
     color: var(--colorLighter);
 }
 
+.linearFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .card{
     display: flex;
     flex-direction: column;
@@ -136,6 +142,7 @@ nav{
     /* border-radius: 5px; */
     border-radius: 50%;
     font-family: var(--fontSmallText);
+    margin: 1em;
 }
 
 .card table{
@@ -151,13 +158,14 @@ nav{
 
 .btn{
     /* width: 10em; */
-    color: white;
-    padding: 1em;
-    border: 1px solid white;
-    background-color: #3333;
-    font-family: var(--fontSmallText);
-    border-radius: 1em;
-    transition: background-color 0.5s ease-in;
+    color: white !important;
+    padding: 1em !important;
+    border: 1px solid white !important;
+    background-color: #3333 !important;
+    font-family: var(--fontSmallText) !important;
+    border-radius: 1em !important;
+    transition: background-color 0.5s ease-in !important;
+    margin: 0 1em !important;
 }
 
 .btn:hover{

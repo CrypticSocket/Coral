@@ -1,7 +1,8 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-#define ONE_WIRE_BUS 5
+//#define ONE_WIRE_BUS 5
+#define ONE_WIRE_BUS D4
 
 OneWire oneWire(ONE_WIRE_BUS);
 
@@ -21,9 +22,10 @@ void loop(void)
   sensors.requestTemperatures(); 
   Celcius=sensors.getTempCByIndex(0);
   Fahrenheit=sensors.toFahrenheit(Celcius);
+  Serial.print("Boiling Water Temperature Test : ");
   Serial.print(" C  ");
   Serial.print(Celcius);
   Serial.print(" F  ");
   Serial.println(Fahrenheit);
-  delay(1000);
+  delay(30000);
 }
